@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5.js example</title>
+
+    <style>
+      body {
+        background-color: gray;
+      }
+      ul {
+        list-style: none;
+        padding-inline-start: 5px;
+      }
+
+      ul li {
+        padding-block-start: 10px;
+      }
+
+      .cursor_coordinate p {
+        margin: 0;
+      }
+    </style>
+
+    <script src="p5.min.js"></script>
+    <script src="sketch.js"></script>
+    <script src="helper.js" defer></script>
+
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <ul>
+          <li>
+            <button id="save">Save (s)</button>
+            <button id="redraw">Redraw (r)</button>
+          </li>
+          <li>
+            <label for="numberOfPrints">Number of prints:</label>
+            <br />
+            <input type="number" id="numberOfPrints" name="numberOfPrints" />
+          </li>
+          <li>
+            <button id="save_multiple">Save Multiple (m)</button>
+          </li>
+          <li class="cursor_coordinate">
+            <p>Cursor coordinates:</p>
+            <p id="x_coordinate">X:</p>
+            <p id="y_coordinate">Y:</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
