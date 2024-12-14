@@ -1,2 +1,8 @@
 # Mac-OS Desktop Services Store files
 .DS_Store
+
+# Depencencies, distribution
+node_modules
+dist
+dist-ssr
+*.local
